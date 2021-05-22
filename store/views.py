@@ -2,6 +2,8 @@ from django.shortcuts import render, redirect
 from django.http import JsonResponse
 import json
 import datetime
+from django.conf import settings
+from django.core.mail import send_mail
 from .models import *
 from .utils import cookieCart, cartData, guestOrder
 from django.http import HttpResponse
@@ -11,6 +13,7 @@ from django.contrib.auth.forms import UserCreationForm
 from .forms import CreateUserForm
 from django.contrib.auth import authenticate, login, logout
 from verify_email.email_handler import send_verification_email
+
 
 from django.contrib import messages
 
@@ -25,10 +28,16 @@ def registerPage(request):
         if request.method == 'POST':
             form = CreateUserForm(request.POST)
             if form.is_valid():
-                form.save()
+                user=form.save()
+                #send_mail(subject,message,from_email,to_list,fail_silently=True)
+                subject = 'thankyou for registering'
+                message = 'welcome to fashion store'
+                from_mail = settings.EMAIL_HOST_USER
+                to_list = [user.email, settings.EMAIL_HOST_USER]
+                send_mail(subject,message,from_mail,to_list,fail_silently=True)
                 user = form.cleaned_data.get('username')
                 messages.success(request, 'Account was created for ' + user)
-
+                
                 return redirect('login')
 
         context = {'form': form}
