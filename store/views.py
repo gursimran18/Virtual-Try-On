@@ -26,10 +26,13 @@ def registerPage(request):
         if request.method == 'POST':
             form = CreateUserForm(request.POST)
             if form.is_valid():
-                form.save()
-                user = form.cleaned_data.get('username')
-                messages.success(request, 'Account was created for ' + user)
-
+                user = form.save()
+                username = form.cleaned_data.get('username')
+                messages.success(request, 'Account was created for ' + username)
+                Customer.objects.create(
+                    user=user,
+                    email=user.email,
+                )
                 return redirect('login')
 
         context = {'form': form}
@@ -61,18 +64,20 @@ def logoutUser(request):
     logout(request)
     return redirect('login')
 
+@login_required(login_url='login')
 def image_upload_view(request):
     """Process images uploaded by users"""
+    customer = request.user.customer
+    form = AccountSettings(instance=customer)
+
     if request.method == 'POST':
-        form = ImageForm(request.POST, request.FILES)
+        form = AccountSettings(request.POST, request.FILES,instance=customer)
         if form.is_valid():
             form.save()
-            # Get the current instance object to display in the template
-            img_obj = form.instance
-            return render(request, 'store/upload.html', {'form': form, 'img_obj': img_obj})
-    else:
-        form = ImageForm()
-    return render(request, 'store/upload.html', {'form': form})
+
+
+    context = {'form':form}
+    return render(request, 'store/upload.html', context)
 
 def store(request):
     data = cartData(request)

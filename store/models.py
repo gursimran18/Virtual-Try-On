@@ -5,15 +5,12 @@ from django.contrib.auth.models import User
 
 class Customer(models.Model):
 	user = models.OneToOneField(User, null=True, blank=True, on_delete=models.CASCADE)
-	name = models.CharField(max_length=200, null=True)
+	name = models.CharField(max_length=200, null=True, blank=True)
 	email = models.CharField(max_length=200)
-
+	image = models.ImageField(upload_to='userImages', null=True, blank=True, default='https://image.shutterstock.com/image-vector/man-avatar-profile-picture-vector-260nw-229692004.jpg')
+	
 	def __str__(self):
-		return self.name
-
-class CustomerImage(models.Model):
-	customer = models.ForeignKey(Customer, on_delete=models.SET_NULL, null=True, blank=True)
-	image = models.ImageField(upload_to='userImages', blank=True)
+		return self.email
 
 class Product(models.Model):
 	name = models.CharField(max_length=200)
