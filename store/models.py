@@ -11,6 +11,14 @@ class Customer(models.Model):
 	
 	def __str__(self):
 		return self.email
+	
+	@property
+	def imageURL(self):
+		try:
+			url = self.image.url
+		except:
+			url = ''
+		return url
 
 class Product(models.Model):
 	name = models.CharField(max_length=200)
