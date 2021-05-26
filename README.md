@@ -56,7 +56,7 @@ Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README
 - [Solution](#solution)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Development](#development)
+- [Resources Used](#resources used)
 
 # Motivation
 Ecommerce has been able to rake in the kind of popularity that it’s experiencing today all because of the fact that it without fail delivers an engaging shopping experience in the comfort of our homes our workplaces, you name it! In the times of ongoing worldwide pandemic, when isolation is the key to not spread the virus, we wanted to enable customers to get as close as possible to the experience of shopping in a store while they are very much in their own comfort zones. 
@@ -91,7 +91,7 @@ To use this project, first clone the repo on your device using the command below
 
 <!-- This is optional and it is used to give the user info on how to use the project after installation. This could be added in the Installation section also. -->
 
-# Development
+# Resources Used
 [(Back to top)](#table-of-contents)
 
 <!-- This is the place where you give instructions to developers on how to modify the code.
