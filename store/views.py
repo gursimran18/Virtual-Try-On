@@ -119,9 +119,9 @@ def productDetail(request, id):
 def virtualTryOn(request, id):
     product = Product.objects.get(id=id)
     f = open(r"C:\Users\Shreya Yadav\Desktop\VTO\newVTO\Down-to-the-Last-Detail-Virtual-Try-on-with-Detail-Carving\demo\demo.txt","w")
-    f.write(request.user.customer.image.url[19:len(request.user.customer.image.url)].split('_')[0]+".jpg ")
-    f.write(request.user.customer.image.url[19:len(request.user.customer.image.url)-4].split('_')[0]+"_keypoints.json ")
-    f.write(product.image.url[8:len(product.image.url)]+" ")
+    f.write(request.user.customer.image.url[19:len(request.user.customer.image.url)].split('.')[0].split('_')[0]+".jpg ")
+    f.write(request.user.customer.image.url[19:len(request.user.customer.image.url)-4].split('.')[0].split('_')[0]+"_keypoints.json ")
+    f.write(product.image.url[8:len(product.image.url)].split('.')[0].split('_')[0]+".jpg ")
     f.write("test")
     f.close()
     os.environ["KMP_DUPLICATE_LIB_OK"]="TRUE"
