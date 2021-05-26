@@ -59,7 +59,12 @@ Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README
 - [Development](#development)
 
 # Motivation
+Ecommerce has been able to rake in the kind of popularity that it’s experiencing today all because of the fact that it without fail delivers an engaging shopping experience in the comfort of our homes our workplaces, you name it! In the times of ongoing worldwide pandemic, when isolation is the key to not spread the virus, we wanted to enable customers to get as close as possible to the experience of shopping in a store while they are very much in their own comfort zones. 
+As shoppers and most of us living by ourselves, we’re all guilty of indulging big time when taking impulsive decisions while shopping on our own. That’s where the advice of family and friends is much needed. It is definitely one most loved experience we’re missing out on while shopping online.
+
 # Solution
+The concept of Collaborative Shopping with AR tends to bridge that very gap.
+
 # Installation
 [(Back to top)](#table-of-contents)
 
