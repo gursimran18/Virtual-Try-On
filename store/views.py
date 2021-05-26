@@ -5,6 +5,8 @@ import datetime
 from django.conf import settings
 from django.core.mail import send_mail
 from .models import *
+from .models import *
+from .forms import *
 from .utils import cookieCart, cartData, guestOrder
 from django.http import HttpResponse
 from django import forms
@@ -13,7 +15,8 @@ from django.contrib.auth.forms import UserCreationForm
 from .forms import CreateUserForm
 from django.contrib.auth import authenticate, login, logout
 from verify_email.email_handler import send_verification_email
-
+import subprocess, os, platform
+from subprocess import call
 
 from django.contrib import messages
 
@@ -35,9 +38,12 @@ def registerPage(request):
                 from_mail = settings.EMAIL_HOST_USER
                 to_list = [user.email, settings.EMAIL_HOST_USER]
                 send_mail(subject,message,from_mail,to_list,fail_silently=True)
-                user = form.cleaned_data.get('username')
-                messages.success(request, 'Account was created for ' + user)
-                
+                username = form.cleaned_data.get('username')
+                messages.success(request, 'Account was created for ' + username)
+                Customer.objects.create(
+                    user=user,
+                    email=user.email,
+                )
                 return redirect('login')
 
         context = {'form': form}
@@ -69,6 +75,20 @@ def logoutUser(request):
     logout(request)
     return redirect('login')
 
+@login_required(login_url='login')
+def image_upload_view(request):
+    """Process images uploaded by users"""
+    customer = request.user.customer
+    form = AccountSettings(instance=customer)
+
+    if request.method == 'POST':
+        form = AccountSettings(request.POST, request.FILES,instance=customer)
+        if form.is_valid():
+            form.save()
+
+
+    context = {'form':form}
+    return render(request, 'store/upload.html', context)
 
 def store(request):
     data = cartData(request)
@@ -92,6 +112,25 @@ def cart(request):
     context = {'items': items, 'order': order, 'cartItems': cartItems}
     return render(request, 'store/cart.html', context)
 
+def productDetail(request, id):
+    product = Product.objects.get(id=id)
+    return render(request, 'store/product_detail.html', {"product": product})
+
+def virtualTryOn(request, id):
+    product = Product.objects.get(id=id)
+    f = open(r"C:\Users\Shreya Yadav\Desktop\VTO\newVTO\Down-to-the-Last-Detail-Virtual-Try-on-with-Detail-Carving\demo\demo.txt","w")
+    f.write(request.user.customer.image.url[19:len(request.user.customer.image.url)].split('_')[0]+".jpg ")
+    f.write(request.user.customer.image.url[19:len(request.user.customer.image.url)-4].split('_')[0]+"_keypoints.json ")
+    f.write(product.image.url[8:len(product.image.url)]+" ")
+    f.write("test")
+    f.close()
+    os.environ["KMP_DUPLICATE_LIB_OK"]="TRUE"
+    if platform.system() == 'Windows':
+        programfiles = ('PROGRAMW6432' if platform.architecture()[0] == '32bit'
+                    else 'PROGRAMFILES')
+    bash_exe = os.getenv(programfiles) + r'\Git\bin\bash'
+    subprocess.call([bash_exe, '-c', 'C:/Users/Shreya\ Yadav/Desktop/VTO/newVTO/Down-to-the-Last-Detail-Virtual-Try-on-with-Detail-Carving/demo.sh'])
+    return render(request, 'store/product_detail.html', {"product": product})
 
 def checkout(request):
     data = cartData(request)
