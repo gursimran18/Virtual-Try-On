@@ -130,7 +130,7 @@ def virtualTryOn(request, id):
                     else 'PROGRAMFILES')
     bash_exe = os.getenv(programfiles) + r'\Git\bin\bash'
     subprocess.call([bash_exe, '-c', 'C:/Users/Shreya\ Yadav/Desktop/VTO/newVTO/Down-to-the-Last-Detail-Virtual-Try-on-with-Detail-Carving/demo.sh'])
-    return render(request, 'store/product_detail.html', {"product": product})
+    return redirect('/images/Viton/0.jpg')
 
 def checkout(request):
     data = cartData(request)
