@@ -1,5 +1,5 @@
 <!-- Add banner here -->
-# Virtual-Try-On
+#ShopOn
 
 <!-- Add buttons here -->
 
