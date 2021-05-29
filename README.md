@@ -66,7 +66,15 @@ As shoppers and most of us living by ourselves, we’re all guilty of indulging 
 The concept of Collaborative Shopping with AR tends to bridge that very gap.
 
 # Installation
-[(Back to top)](#table-of-contents)
+Install Anaconda3 on your PC, and add it to your path. Follow the steps below in your terminal:<br />
+```cd "Path where you have cloned this repository"```<br /><br />
+Create a virtual environment in conda<br />
+```conda create -n tryon```<br /><br />
+```conda activate tryon```<br /><br />
+```pip install -r requirement.txt```<br /><br />
+To run server, run the following command:
+```python manage.py runserver```<br /><br />
+
 
 <!-- *You might have noticed the **Back to top** button(if not, please notice, it's right there!). This is a good idea because it makes your README **easy to navigate.*** 
 
