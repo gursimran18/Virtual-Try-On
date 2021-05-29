@@ -1,6 +1,9 @@
 <!-- Add banner here -->
-# ShopOn
+<p align="center">
+ <img src = "https://github.com/hackko-20/Virtual-Try-On/blob/ca369069df81b99a34140fd0863adbe18c238998/ShopOn-Readme.png">
+</p>  
 
+# A Collaborative Virtual Try-On E-commerce website 
 <!-- Add buttons here -->
 
 <!-- Describe your project in brief -->
