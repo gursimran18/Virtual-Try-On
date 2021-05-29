@@ -86,8 +86,8 @@ def image_upload_view(request):
         if form.is_valid():
             form.save()
 
-
-    context = {'form':form}
+    groups = customer.group.all()
+    context = {'form':form, 'groups':groups}
     return render(request, 'store/upload.html', context)
 
 def store(request):
@@ -120,7 +120,7 @@ def virtualTryOn(request, id):
     product = Product.objects.get(id=id)
     f = open(r"C:\Users\Shreya Yadav\Desktop\VTO\newVTO\Down-to-the-Last-Detail-Virtual-Try-on-with-Detail-Carving\demo\demo.txt","w")
     f.write(request.user.customer.image.url[19:len(request.user.customer.image.url)].split('.')[0].split('_')[0]+".jpg ")
-    f.write(request.user.customer.image.url[19:len(request.user.customer.image.url)-4].split('.')[0].split('_')[0]+"_keypoints.json ")
+    f.write(request.user.customer.image.url[19:len(request.user.customer.image.url)].split('.')[0].split('_')[0]+"_keypoints.json ")
     f.write(product.image.url[8:len(product.image.url)].split('.')[0].split('_')[0]+".jpg ")
     f.write("test")
     f.close()
@@ -130,6 +130,7 @@ def virtualTryOn(request, id):
                     else 'PROGRAMFILES')
     bash_exe = os.getenv(programfiles) + r'\Git\bin\bash'
     subprocess.call([bash_exe, '-c', 'C:/Users/Shreya\ Yadav/Desktop/VTO/newVTO/Down-to-the-Last-Detail-Virtual-Try-on-with-Detail-Carving/demo.sh'])
+    form = Viton()
     return redirect('/images/Viton/0.jpg')
 
 def checkout(request):

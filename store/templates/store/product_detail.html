@@ -18,8 +18,10 @@
                         <hr>
                         <p>Product Description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem animi iure amet corporis sequi, repudiandae maxime tenetur quidem vel quisquam officia natus, illo perferendis expedita laborum voluptas assumenda nostrum distinctio!</p>
                         <button data-product="{{product.id}}" data-action="add" class="btn btn-success add-btn update-cart" style="margin-top: 10%; display: inline-block">Add to Cart</button>
+                        {% if request.user.is_authenticated %}
                         <a class="btn btn-warning" href="/viton/{{product.id}}" style="margin-top: 10%; display:inline-block">Virtual Try On</a>
-                    </div>
+                        {% endif %}
+                    </div> 
                 </div>
             </div>
         </div>   

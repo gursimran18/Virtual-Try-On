@@ -2,13 +2,29 @@ from django.db import models
 from django.contrib.auth.models import User
 
 # Create your models here.
+class Group(models.Model):
+	name = models.CharField(max_length=200)
+
+class VitonUploads(models.Model):
+	group = models.ForeignKey(Group, on_delete=models.SET_NULL, null=True, blank=True)
+	image = models.ImageField(upload_to='groupImages', null=True, blank=True)
+	comments = models.CharField(max_length=500, null=True, blank=True)
+	
+	@property
+	def imageURL(self):
+		try:
+			url = self.image.url
+		except:
+			url = ''
+		return url
 
 class Customer(models.Model):
 	user = models.OneToOneField(User, null=True, blank=True, on_delete=models.CASCADE)
 	name = models.CharField(max_length=200, null=True, blank=True)
 	email = models.CharField(max_length=200)
-	image = models.ImageField(upload_to='userImages', null=True, blank=True, default='1.jpg')
-	
+	image = models.ImageField(upload_to='userImages', null=True, blank=True, default='userImages/1.jpg')
+	group = models.ManyToManyField(Group)
+
 	def __str__(self):
 		return self.email
 	

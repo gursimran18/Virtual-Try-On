@@ -32,9 +32,16 @@
 			<form method="POST" action="" enctype="multipart/form-data">
 				{% csrf_token %}
 				{{form.as_p}}
-		
-			<input class="btn btn-primary" type="submit" name="Update Information">
+				<input class="btn btn-primary" type="submit" name="Update Information">
+				
 			</form>
+			<hr>
+			<h4>Currently in these groups: </h4>
+			<ul>
+				{% for group in groups %}
+				<li>{{group.name}}</li>
+				{% endfor %}
+			</ul>
 		</div>
 	</div>
 </div>
