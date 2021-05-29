@@ -1,6 +1,6 @@
 <!-- Add banner here -->
 <p align="center">
- <img src = "https://github.com/hackko-20/Virtual-Try-On/blob/d4a75ca2ebc7896bb8844437159517ca9a307e0e/static/images/Asset%205-8.png">
+ <img src = "https://github.com/hackko-20/Virtual-Try-On/blob/ca369069df81b99a34140fd0863adbe18c238998/ShopOn-Readme.png">
 </p>  
 
 # A Collaborative Virtual Try-On E-commerce website 
