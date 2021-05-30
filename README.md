@@ -82,6 +82,8 @@ Broadly speaking, the end goal of our project here was to implement a virtual tr
 <img src="https://github.com/khushi-web/IMgbot/blob/main/vit2.png" height="500">
 <img src="https://github.com/khushi-web/IMgbot/blob/main/vit1.png" height="500">
 <img src="https://github.com/khushi-web/IMgbot/blob/main/vit3.png" height="500">
+<img src="https://github.com/khushi-web/IMgbot/blob/main/WhatsApp%20Image%202021-05-30%20at%2012.16.41.jpeg" height="500">
+<img src="https://github.com/khushi-web/IMgbot/blob/main/WhatsApp%20Image%202021-05-30%20at%2012.17.44.jpeg" height="500">
 
 # Features
  - **Current Key Features:**
