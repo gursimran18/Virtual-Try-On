@@ -134,6 +134,17 @@ To run server, run the following command:
 ```python manage.py runserver```<br /><br />
 
 For the model, clone [**Repository**](https://github.com/JDAI-CV/Down-to-the-Last-Detail-Virtual-Try-on-with-Detail-Carving).
+In Virtual-Try-On/store/views.py under the function "virtualTryOn" :
+
+(line 130) Change the path to the current path of Down-to-the-Last-Detail-Virtual-Try-on-with-Detail-Carving\demo\demo.txt on your computer.
+
+(line 141) Change the path given in subprocess to the current path of Down-to-the-Last-Detail-Virtual-Try-on-with-Detail-Carving/demo.sh on your computer.
+
+In Down-to-the-Last-Detail-Virtual-Try-on-with-Detail-Carving/demo.sh:
+
+(line 4) Change the path to the current path of Down-to-the-Last-Detail-Virtual-Try-on-with-Detail-Carving on your computer.
+
+(line 5) Change --forward_save_path value to the current path of Virtual-Try-On/static/images/Viton on your computer.
 
 
 
