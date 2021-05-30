@@ -77,9 +77,16 @@ Broadly speaking, the end goal of our project here was to implement a virtual tr
 
 <img src = "sampleVTon.png">
 
+
 Model Used: [**Down to the last Detail Virtual-Try-On**](https://github.com/JDAI-CV/Down-to-the-Last-Detail-Virtual-Try-on-with-Detail-Carving)<br />
+
+
 Working:<br />
-<img src = "sample.jpg"><br />
+
+
+<img src = "Sample.jpg"><br />
+
+
 **STEP 1**: Model Image is processed using OpenPose to mark keypoints<br />
 **STEP 2**: Using the keypoints, the image is segmented into various features: face, arms, body etc.<br />
 **STEP 3**: The cloth mask of the clothing item is generated.<br />
@@ -115,11 +122,14 @@ Create a virtual environment in conda<br />
 To run server, run the following command:
 ```python manage.py runserver```<br /><br />
 
+For the model, clone [**Repository**](https://github.com/JDAI-CV/Down-to-the-Last-Detail-Virtual-Try-on-with-Detail-Carving).
+
 
 
 # Tech Stack
- - **Frontened:** HTML, CSS, BootStrap, React Framework, JavaScript
- - **Backened:** Python Django Framework, Paypal API for payment, Web Socket (Django Channels)
+ - **Frontend:** HTML, CSS, BootStrap, JavaScript
+ - **Backend:** Python Django Framework, Paypal API for payment, Web Socket (Django Channels)
+ - **Model Backend:** Python, MATLAB, Ananconda3, Libraries (Pytorch, Scikit-Image, OpenCV).
 
 # Benefits
 With more and more customers preferring to shop from retailers offering virtual reality eCommerce stores, the popularity of VR-enabled eCommerce platforms is increasing by leaps and bounds across the globe. And with the ongoing worldwide pandemic, it has become the need of the hour.
