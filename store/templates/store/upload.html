@@ -15,8 +15,9 @@
 {% else %}
 <h3 style="color: white;">Hey there!</h3>
 {% endif %}
-<div class="row">
-	<div class="col-md-4">
+<hr style="border: 0.5px solid white">
+<div class="row" style="height: 500px">
+	<div class="col-md-4" style="height: 100%">
 		<div class="card card-body">
 			<a class="btn btn-warning" href="{% url 'store' %}"> &#8592; Back to Store</a>
 			<hr>
@@ -36,12 +37,7 @@
 				
 			</form>
 			<hr>
-			<h4>Currently in these groups: </h4>
-			<ul>
-				{% for group in groups %}
-				<li>{{group.name}}</li>
-				{% endfor %}
-			</ul>
+			<p>Kindly note that your profile picture will be used when you choose to try any of our clothing products virtually.</p>
 		</div>
 	</div>
 </div>

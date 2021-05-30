@@ -1,6 +1,8 @@
 {% extends 'store/main.html' %}
 {% load static %}
 {% block content %}
+    <strong><h4 style="margin-top: 2%; color: white; display: inline">Products</h4>&nbsp;<h4 class="badge badge-pill badge-danger" style="color: white; display: inline;">{{products|length}}</h4></strong>
+    <hr style="border: 0.5px solid white">  
     <div class="row">
         {% for product in products %}
         <div class="col-lg-4">
