@@ -138,14 +138,14 @@ For the model, clone [**Repository**](https://github.com/JDAI-CV/Down-to-the-Las
 
 
 # Tech Stack
- - **Frontend:** HTML, CSS, BootStrap, JavaScript
- - **Backend:** Python Django Framework, Paypal API for payment, Web Socket (Django Channels)
+ - **Website Frontend:** HTML, CSS, BootStrap, JavaScript
+ - **Website Backend:** Python Django Framework, Paypal API for payment, Web Socket (Django Channels)
  - **Model Backend:** Python, MATLAB, Ananconda3, Libraries (Pytorch, Scikit-Image, OpenCV).
 
 # Benefits
 With more and more customers preferring to shop from retailers offering virtual reality eCommerce stores, the popularity of VR-enabled eCommerce platforms is increasing by leaps and bounds across the globe. And with the ongoing worldwide pandemic, it has become the need of the hour.
 
-These emerging technologies can take customer experience to a whole new level by:
+We have used these emerging technologies in our project that can take customer experience to a whole new level by:
  - Facilitating tech-enabled shopping
  - Helping virtual retailers transcend geographic barriers
  - Allowing customers to try on and assess clothes virtually so that they can decide how a dress looks on them
