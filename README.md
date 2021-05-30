@@ -99,7 +99,7 @@ To run server, run the following command:
  - **Backened:** Python Django Framework, Paypal API for payment, Web Socket (Django Channels)
  
 # Team Members
- - [Shreya Gupta](https://github.com/hackko-20)
+ - [Shreya Yadav](https://github.com/hackko-20)
  - [Khushi Agrawal](https://github.com/khushi-web)
  - [Aparna Mittal](https://github.com/apmit2704)
  - [Gursimran Kaur Saini](https://github.com/gursimran18)
