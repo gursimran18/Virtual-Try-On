@@ -57,9 +57,10 @@ Here is a random GIF as a placeholder.
 Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README. -->
 - [Motivation](#motivation)
 - [Solution](#solution)
+- [Snapshots](#snapshots)
 - [Installation](#installation)
-- [Usage](#usage)
-- [Resources](#resources)
+- [Tech Stack](#Tech Stack)
+<!-- - [Resources](#resources) -->
 
 # Motivation
 Ecommerce has been able to rake in the kind of popularity that it’s experiencing today all because of the fact that it without fail delivers an engaging shopping experience in the comfort of our homes our workplaces, you name it! In the times of ongoing worldwide pandemic, when isolation is the key to not spread the virus, we wanted to enable customers to get as close as possible to the experience of shopping in a store while they are very much in their own comfort zones. 
@@ -67,6 +68,8 @@ As shoppers and most of us living by ourselves, we’re all guilty of indulging 
 
 # Solution
 The concept of Collaborative Shopping with AR tends to bridge that very gap.
+
+# Snapshots
 
 # Installation
 Install Anaconda3 on your PC, and add it to your path. Follow the steps below in your terminal:<br />
@@ -97,12 +100,9 @@ To use this project, first clone the repo on your device using the command below
 
 ```git clone https://github.com/navendu-pottekkat/nsfw-filter.git``` -->
 
-# Usage
-[(Back to top)](#table-of-contents)
+# Tech Stack
 
-<!-- This is optional and it is used to give the user info on how to use the project after installation. This could be added in the Installation section also. -->
-
-# Resources
+<!-- # Resources
 [(Back to top)](#table-of-contents)
 
 <!-- This is the place where you give instructions to developers on how to modify the code.
@@ -118,4 +118,4 @@ Ideally, you should keep the README simple. If you need to add more complex expl
 
 <!-- This is where you can let people know how they can **contribute** to your project. Some of the ways are given below.
 
-Also this shows how you can add subsections within a section. -->
+Also this shows how you can add subsections within a section. --> -->
