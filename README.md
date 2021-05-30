@@ -100,6 +100,6 @@ To run server, run the following command:
  
 # Team Members
  - [Shreya Yadav](https://github.com/hackko-20)
- - [Khushi Agrawal](https://github.com/khushi-web)
+ - [Khushi Agarwal](https://github.com/khushi-web)
  - [Aparna Mittal](https://github.com/apmit2704)
  - [Gursimran Kaur Saini](https://github.com/gursimran18)
