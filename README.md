@@ -62,6 +62,7 @@ Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README
 - [Features](#features)
 - [Installation](#installation)
 - [Tech Stack](#tech-stack)
+- [Benefits](#benefits)
 - [Team Members](#team-members)
 <!-- - [Resources](#resources) -->
 
@@ -85,6 +86,8 @@ Broadly speaking, the end goal of our project here was to implement a virtual tr
 # Features
  - **Current Key Features:**
  - **Future Scope:**
+   - Providing a real 3-D environment for an immersive and fun shopping experience
+   - Allowing customers to try on and assess different products virtually so that they can decide how a dress, necklace, or lipstick shade would look on them, or if a         piece of furniture would look good in their bedroom.
 
 # Installation
 Clone this Repository on your local machine by running the following command on your terminal - 
@@ -105,6 +108,24 @@ To run server, run the following command:
 # Tech Stack
  - **Frontened:** HTML, CSS, BootStrap, React Framework, JavaScript
  - **Backened:** Python Django Framework, Paypal API for payment, Web Socket (Django Channels)
+
+# Benefits
+With more and more customers preferring to shop from retailers offering virtual reality eCommerce stores, the popularity of VR-enabled eCommerce platforms is increasing by leaps and bounds across the globe. And with the ongoing worldwide pandemic, it has become the need of the hour.
+
+These emerging technologies can take customer experience to a whole new level by:
+ - Facilitating tech-enabled shopping
+ - Helping virtual retailers transcend geographic barriers
+ - Allowing customers to try on and assess clothes virtually so that they can decide how a dress looks on them
+ - Keeping customers engaged
+ - Educating customers about your products
+ - Saving customers’ time.
+ - Allowing customers to have realtime feedback of how a dress looks on them from family and friends
+
+It would also help the retailers by:
+ - Enhancing customer satisfaction
+ - Reducing the number of returns
+ - Increasing online retail sales and 
+ - Boosting conversion rates.
  
 # Team Members
  - [Shreya Yadav](https://github.com/hackko-20)
