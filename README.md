@@ -1,10 +1,10 @@
 <!-- Add banner here -->
-# A Collaborative Virtual Try-On E-commerce website
+
 <p align="center">
  <img src = "https://github.com/hackko-20/Virtual-Try-On/blob/ca369069df81b99a34140fd0863adbe18c238998/ShopOn-Readme.png">
 </p>  
 
-
+# A Collaborative Virtual Try-On E-commerce website
 <!-- Add buttons here -->
 
 <!-- Describe your project in brief -->
@@ -73,6 +73,8 @@ As shoppers and most of us living by ourselves, we’re all guilty of indulging 
 The concept of Collaborative Shopping with AR tends to bridge that very gap.
 
 Broadly speaking, the end goal of our project here was to implement a virtual try-on network — essentially taking in-shop clothing and a person image as input to give output as an image of a person wearing those clothes and providing an in-built social chat application to enable users shop along with their family & friends with the comfort of being at home (social distancing in these dare times). The model implemented has been done with a focus on tops, with complete apparel transfer being potential future work.
+
+<img src = "sampleVTon.png">
 
 # Snapshots
 
