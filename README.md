@@ -72,6 +72,8 @@ As shoppers and most of us living by ourselves, we’re all guilty of indulging 
 # Solution
 The concept of Collaborative Shopping with AR tends to bridge that very gap.
 
+Broadly speaking, the end goal of our project here was to implement a virtual try-on network — essentially taking in-shop clothing and a person image as input to give output as an image of a person wearing those clothes and providing an in-built social chat application to enable users shop along with their family & friends with the comfort of being at home (social distancing in these dare times). The model implemented has been done with a focus on tops, with complete apparel transfer being potential future work.
+
 # Snapshots
 
 # Features
