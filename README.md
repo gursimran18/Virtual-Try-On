@@ -75,6 +75,14 @@ The concept of Collaborative Shopping with AR tends to bridge that very gap.
 
 Broadly speaking, the end goal of our project here was to implement a virtual try-on network — essentially taking in-shop clothing and a person image as input to give output as an image of a person wearing those clothes and providing an in-built social chat application to enable users shop along with their family & friends with the comfort of being at home (social distancing in these dare times). The model implemented has been done with a focus on tops, with complete apparel transfer being potential future work.
 
+Model Used: [**Down to the last Detail Virtual-Try-On**](https://github.com/JDAI-CV/Down-to-the-Last-Detail-Virtual-Try-on-with-Detail-Carving)<br />
+Working:<br />
+<img src = "sample.jpg"><br />
+**STEP 1**: Model Image is processed using OpenPose to mark keypoints<br />
+**STEP 2**: Using the keypoints, the image is segmented into various features: face, arms, body etc.<br />
+**STEP 3**: The cloth mask of the clothing item is generated.<br />
+**STEP 4**: The mask and the segmented image are warped together.<br />
+
 <img src = "sampleVTon.png">
 
 # Snapshots
