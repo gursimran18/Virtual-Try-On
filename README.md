@@ -77,6 +77,10 @@ Broadly speaking, the end goal of our project here was to implement a virtual tr
 <img src = "sampleVTon.png">
 
 # Snapshots
+<img src="https://github.com/khushi-web/IMgbot/blob/main/vit4.png" height="500">
+<img src="https://github.com/khushi-web/IMgbot/blob/main/vit2.png" height="500">
+<img src="https://github.com/khushi-web/IMgbot/blob/main/vit1.png" height="500">
+<img src="https://github.com/khushi-web/IMgbot/blob/main/vit3.png" height="500">
 
 # Features
  - **Current Key Features:**
