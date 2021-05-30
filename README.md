@@ -62,6 +62,7 @@ Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README
 - [Features](#features)
 - [Installation](#installation)
 - [Tech Stack](#tech-stack)
+- [Team Members](#team-members)
 <!-- - [Resources](#resources) -->
 
 # Motivation
@@ -78,8 +79,9 @@ The concept of Collaborative Shopping with AR tends to bridge that very gap.
  - **Future Scope:**
 
 # Installation
-Clone this Repository 
-```git clone "put repo link here" ```
+Clone this Repository on your local machine by running the following command on your terminal - 
+```git clone "https://github.com/hackko-20/Virtual-Try-On.git"``` 
+OR download the zip folder.
 
 Install Anaconda3 on your PC, and add it to your path. Follow the steps below in your terminal:<br />
 ```cd "Path where you have cloned this repository"```<br /><br />
@@ -95,3 +97,9 @@ To run server, run the following command:
 # Tech Stack
  - **Frontened:** HTML, CSS, BootStrap, React Framework, JavaScript
  - **Backened:** Python Django Framework, Paypal API for payment, Web Socket (Django Channels)
+ 
+# Team Members
+ - [Shreya Gupta](https://github.com/hackko-20)
+ - [Khushi Agrawal](https://github.com/khushi-web)
+ - [Aparna Mittal](https://github.com/apmit2704)
+ - [Gursimran Kaur Saini](https://github.com/gursimran18)
