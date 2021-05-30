@@ -1,4 +1,4 @@
-<!-- Add banner here -->
+<p align="center"><strong> HackOn with AMAZON </strong></p>
 
 <p align="center">
  <img src = "https://github.com/hackko-20/Virtual-Try-On/blob/ca369069df81b99a34140fd0863adbe18c238998/ShopOn-Readme.png">
