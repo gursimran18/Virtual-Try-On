@@ -104,7 +104,18 @@ Working:<br />
 
 # Features
  - **Current Key Features:**
+   - User can Login/Sign Up 
+   - Email verification for first time users
+   - User can also order without creating an account and logging in (Guest checkout feature)
+   - Payment feature through Paypal API
+   - User can add multiple number of items of a same product
+   - Order summary is visible after payment confirmation
+   - Logged in user can have multiple shipping addresses
+   - Logged in user can see how a particular dress looks on them
+   - User can make groups and add family & friends 
+   - Groups have a shared cart and each member can add items to that cart
  - **Future Scope:**
+   - Groups will have a chat feature where the members can talk and take each others feedback on every product
    - Providing a real 3-D environment for an immersive and fun shopping experience
    - Allowing customers to try on and assess different products virtually so that they can decide how a dress, necklace, or lipstick shade would look on them, or if a         piece of furniture would look good in their bedroom.
 
