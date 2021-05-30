@@ -1,9 +1,10 @@
 <!-- Add banner here -->
+
 <p align="center">
  <img src = "https://github.com/hackko-20/Virtual-Try-On/blob/ca369069df81b99a34140fd0863adbe18c238998/ShopOn-Readme.png">
 </p>  
 
-# A Collaborative Virtual Try-On E-commerce website 
+# A Collaborative Virtual Try-On E-commerce website
 <!-- Add buttons here -->
 
 <!-- Describe your project in brief -->
@@ -57,9 +58,13 @@ Here is a random GIF as a placeholder.
 Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README. -->
 - [Motivation](#motivation)
 - [Solution](#solution)
+- [Snapshots](#snapshots)
+- [Features](#features)
 - [Installation](#installation)
-- [Usage](#usage)
-- [Resources](#resources)
+- [Tech Stack](#tech-stack)
+- [Benefits](#benefits)
+- [Team Members](#team-members)
+<!-- - [Resources](#resources) -->
 
 # Motivation
 Ecommerce has been able to rake in the kind of popularity that it’s experiencing today all because of the fact that it without fail delivers an engaging shopping experience in the comfort of our homes our workplaces, you name it! In the times of ongoing worldwide pandemic, when isolation is the key to not spread the virus, we wanted to enable customers to get as close as possible to the experience of shopping in a store while they are very much in their own comfort zones. 
@@ -68,7 +73,27 @@ As shoppers and most of us living by ourselves, we’re all guilty of indulging 
 # Solution
 The concept of Collaborative Shopping with AR tends to bridge that very gap.
 
+Broadly speaking, the end goal of our project here was to implement a virtual try-on network — essentially taking in-shop clothing and a person image as input to give output as an image of a person wearing those clothes and providing an in-built social chat application to enable users shop along with their family & friends with the comfort of being at home (social distancing in these dare times). The model implemented has been done with a focus on tops, with complete apparel transfer being potential future work.
+
+<img src = "sampleVTon.png">
+
+# Snapshots
+<img src="https://github.com/khushi-web/IMgbot/blob/main/vit4.png" height="500">
+<img src="https://github.com/khushi-web/IMgbot/blob/main/vit2.png" height="500">
+<img src="https://github.com/khushi-web/IMgbot/blob/main/vit1.png" height="500">
+<img src="https://github.com/khushi-web/IMgbot/blob/main/vit3.png" height="500">
+
+# Features
+ - **Current Key Features:**
+ - **Future Scope:**
+   - Providing a real 3-D environment for an immersive and fun shopping experience
+   - Allowing customers to try on and assess different products virtually so that they can decide how a dress, necklace, or lipstick shade would look on them, or if a         piece of furniture would look good in their bedroom.
+
 # Installation
+Clone this Repository on your local machine by running the following command on your terminal - 
+```git clone "https://github.com/hackko-20/Virtual-Try-On.git"``` 
+OR download the zip folder.
+
 Install Anaconda3 on your PC, and add it to your path. Follow the steps below in your terminal:<br />
 ```cd "Path where you have cloned this repository"```<br /><br />
 Create a virtual environment in conda<br />
@@ -79,43 +104,31 @@ To run server, run the following command:
 ```python manage.py runserver```<br /><br />
 
 
-<!-- *You might have noticed the **Back to top** button(if not, please notice, it's right there!). This is a good idea because it makes your README **easy to navigate.*** 
 
-The first one should be how to install(how to generally use your project or set-up for editing in their machine).
+# Tech Stack
+ - **Frontened:** HTML, CSS, BootStrap, React Framework, JavaScript
+ - **Backened:** Python Django Framework, Paypal API for payment, Web Socket (Django Channels)
 
-This should give the users a concrete idea with instructions on how they can use your project repo with all the steps.
+# Benefits
+With more and more customers preferring to shop from retailers offering virtual reality eCommerce stores, the popularity of VR-enabled eCommerce platforms is increasing by leaps and bounds across the globe. And with the ongoing worldwide pandemic, it has become the need of the hour.
 
-Following this steps, **they should be able to run this in their device.**
+These emerging technologies can take customer experience to a whole new level by:
+ - Facilitating tech-enabled shopping
+ - Helping virtual retailers transcend geographic barriers
+ - Allowing customers to try on and assess clothes virtually so that they can decide how a dress looks on them
+ - Keeping customers engaged
+ - Educating customers about your products
+ - Saving customers’ time.
+ - Allowing customers to have realtime feedback of how a dress looks on them from family and friends
 
-A method I use is after completing the README, I go through the instructions from scratch and check if it is working. -->
-
-<!-- Here is a sample instruction:
-
-To use this project, first clone the repo on your device using the command below:
-
-```git init```
-
-```git clone https://github.com/navendu-pottekkat/nsfw-filter.git``` -->
-
-# Usage
-[(Back to top)](#table-of-contents)
-
-<!-- This is optional and it is used to give the user info on how to use the project after installation. This could be added in the Installation section also. -->
-
-# Resources
-[(Back to top)](#table-of-contents)
-
-<!-- This is the place where you give instructions to developers on how to modify the code.
-
-You could give **instructions in depth** of **how the code works** and how everything is put together.
-
-You could also give specific instructions to how they can setup their development environment.
-
-Ideally, you should keep the README simple. If you need to add more complex explanations, use a wiki. Check out [this wiki](https://github.com/navendu-pottekkat/nsfw-filter/wiki) for inspiration. -->
-
-<!-- # Contribute
-[(Back to top)](#table-of-contents) -->
-
-<!-- This is where you can let people know how they can **contribute** to your project. Some of the ways are given below.
-
-Also this shows how you can add subsections within a section. -->
+It would also help the retailers by:
+ - Enhancing customer satisfaction
+ - Reducing the number of returns
+ - Increasing online retail sales and 
+ - Boosting conversion rates.
+ 
+# Team Members
+ - [Shreya Yadav](https://github.com/hackko-20)
+ - [Khushi Agarwal](https://github.com/khushi-web)
+ - [Aparna Mittal](https://github.com/apmit2704)
+ - [Gursimran Kaur Saini](https://github.com/gursimran18)
